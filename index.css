@@ -1,0 +1,33 @@
+.title {
+    font-size: 1.5em;
+    border-bottom: 1px dashed gray;
+    margin-top: 1em;
+    display: block;
+    width: 100%;
+}
+
+.form .auto-width {
+    width: auto;
+    margin-right: 0.5em;
+}
+
+.form span {
+    background-color: #fff;
+    color: #333;
+    display: block;
+    font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Arial,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: 1rem;
+    line-height: 1.25;
+    margin: .9375rem 0 0;
+    padding: .3125rem;
+}
+
+.table table.tr table.td {
+    font-family: Consolas, sans-serif;
+}
+
+.flex-left .custom-font {
+    font-family: 宋体, Microsoft Yahei, 微软雅黑, Oxygen-Sans, Ubuntu, Cantarell, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>斜率计算</title>
+    <link href="https://cdn.bootcss.com/mobi.css/3.1.1/mobi.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+
+<div class="flex-center">
+    <div class="container-wider">
+        <div class="form">
+            <div class="flex-left">
+                <div class="title">上传文件</div>
+            </div>
+            <div class="flex-left">
+                <input type="file" multiple="multiple" id="uploadFiles" class="btn"
+                       style="width: auto; margin-right: 1em;border: 1px solid black">
+                <input type="button" value="上传" onclick="uploadFile()" class="btn btn-primary ">
+            </div>
+            <div class="flex-left">
+                <div class="title">参数配置</div>
+            </div>
+            <div class="flex-left">
+                <span>x值比较的误差：</span><input type="text" value="0.00000001" class="auto-width" id="threshold"/>
+            </div>
+            <div class="flex-left">
+                <span>x1</span><input type="text" id="x1" class="auto-width"/>
+                <span>x2:</span><input type="text" id="x2" class="auto-width"/>
+                <button onclick="calculate()" class="btn btn-primary">开始计算</button>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="flex-left">
+                <div class="title">计算结果</div>
+            </div>
+            <div id="calContent">
+                <div class="flex-left">
+                    <button onclick="downloadResult()" class="btn btn-primary">下载计算结果</button>
+                </div>
+                <div class="flex-left">
+                    <table class="table custom-font" id="resultList"></table>
+                </div>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="flex-left">
+                <div class="title">已加载的文件</div>
+            </div>
+            <div id="loadContent" class="flex-left">
+                <table id="fileTable" class="table custom-font"></table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script type="application/javascript" src="index.js"></script>
+</body>
+</html>
